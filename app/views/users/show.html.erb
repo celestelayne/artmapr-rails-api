@@ -1,0 +1,21 @@
+<div class="col-md-6 col-md-offset-3">
+
+  <h1>User Profile</h1>
+  <div class="gravatar-image">
+    <%= gravatar_for @user %>
+  </div>
+  <div class="">
+    <strong>Name: </strong>
+    <%= @user.first_name %> <%= @user.last_name %>
+  </div>
+  <div class="">
+    <strong>Email: </strong>
+    <%= @user.email %>
+  </div>
+
+  <hr/>
+
+  <div class="">
+    <%= @user.api_token %>
+  </div>
+</div>

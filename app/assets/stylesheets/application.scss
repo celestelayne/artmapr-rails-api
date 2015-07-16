@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+/*--------------------
+[Table of Contents]
+
+1.	Body
+	2.	Header | #header
+	3.	Content | #content
+	2.	Footer | #footer
+
+--------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	// font-size: 62.5%
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+#artmapr-nav {
+  height: 60px;
+  background-color: #5B3586;
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.nav-item {
+  color: #F2F2F2;
+  font-size: 18px;
+}
+
+.navbar-right {
+  text-align: center;
+  line-height: 55px;
+}
+
+#login-button  {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 40%;
+  border: 2px solid #F2F2F2;
+  border-radius: 0;
+  background-color: transparent;
+  color: #F2F2F2;
+  font-size: 18px;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+#signup-button  {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  /*margin: auto;*/
+  width: 40%;
+  border: 2px solid #F2F2F2;
+  border-radius: 0;
+  background-color: transparent;
+  color: #F2F2F2;
+  font-size: 18px;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+#login-button:hover,
+#login-button:active {
+  color: #FFF;
+  background: #F2F2F2;
+  border-color: #F2F2F2;
+}
+
+#signup-button:hover,
+#signup-button:active {
+  color: #FFF;
+  background: #F2F2F2;
+  border-color: #F2F2F2;
+}

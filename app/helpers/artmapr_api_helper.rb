@@ -1,0 +1,2 @@
+module ArtmaprApiHelper
+end
