@@ -15,11 +15,16 @@ Rails.application.routes.draw do
 
   resources :users
 
+  get 'arts/index'
+  get 'venues/index'
+
   namespace :api, defaults: {format: 'json'} do
     scope module: :v1 do
-      resources :arts, only: :index
+      resources :arts, only: [:index, :edit, :show, :delete]
+      resources :venues, only: [:index]
     end
   end
+
 
 end
 # Prefix Verb   URI Pattern               Controller#Action

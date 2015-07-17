@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
   has_secure_password
+  paginates_per 50
 
-  before_validation :on => :create, :gen_api_token
+  # before_validation :on => :create, :gen_api_token
 
   validates :api_token,
             :uniqueness => true
@@ -27,6 +28,10 @@ class User < ActiveRecord::Base
     end
 
     self.api_token = token
+  end
+
+  def full_name
+    "#{first_name} #{last_name}"
   end
 
 end

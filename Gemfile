@@ -25,6 +25,12 @@ gem 'jbuilder', '~> 2.0'
 # Paginator for Rails
 gem 'kaminari', '~> 0.16.1'
 
+# Rails responder modules
+gem 'responders', '~> 2.0'
+
+# Active Resource
+gem 'activeresource'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
