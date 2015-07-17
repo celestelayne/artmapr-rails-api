@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   include SessionsHelper
-  before_action :current_user
-
+  # before_action :current_user
+  skip_before_action :verify_authenticity_token, except: [:create, :update, :delete]
 end

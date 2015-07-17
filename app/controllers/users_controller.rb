@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   # Grabs the users
   def index
     @users = User.all
+    @users = User.order(:last_name).page params[:page]
     render :index
   end
 

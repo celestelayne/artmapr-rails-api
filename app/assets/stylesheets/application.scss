@@ -18,6 +18,10 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
 /*--------------------
 [Table of Contents]
 
@@ -28,78 +32,210 @@
 
 --------------------*/
 
-* {
-	margin: 0;
-	padding: 0;
-}
+	* {
+		margin: 0;
+		padding: 0;
+	}
 
-body {
-	// font-size: 62.5%
-}
+	body {
+		font-size: 62.5%;
+		font-family: 'Source Sans Pro', sans-serif;
+		// font-family: 'Questrial', sans-serif;
+	}
 
-p {
-	font-size: 1.2em;
-	line-height: 1.5em;
-}
+	p {
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
 
-#artmapr-nav {
-  height: 60px;
-  background-color: #5B3586;
-}
+	h1 {
+		// font-size: 2em;
+		font-family: 'Alegreya', serif;
 
-.menu-items {
-  list-style-type: none;
-}
+	}
 
-.nav-item {
-  color: #F2F2F2;
-  font-size: 18px;
-}
+	h2 {
+		// font-size: 1.5em;
+		font-family: 'Alegreya', serif;
+	}
 
-.navbar-right {
-  text-align: center;
-  line-height: 55px;
-}
+	h3 {
+		// font-size: 1.25em;
+	}
 
-#login-button  {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-  width: 40%;
-  border: 2px solid #F2F2F2;
-  border-radius: 0;
-  background-color: transparent;
-  color: #F2F2F2;
-  font-size: 18px;
-  text-transform: uppercase;
-  z-index: 5;
-}
+	h4 {
+		// font-size: 1.1em;
+		line-height: 1.5;
+	}
 
-#signup-button  {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
-  /*margin: auto;*/
-  width: 40%;
-  border: 2px solid #F2F2F2;
-  border-radius: 0;
-  background-color: transparent;
-  color: #F2F2F2;
-  font-size: 18px;
-  text-transform: uppercase;
-  z-index: 5;
-}
+	#artmapr-main {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-#login-button:hover,
-#login-button:active {
-  color: #FFF;
-  background: #F2F2F2;
-  border-color: #F2F2F2;
-}
+	#artmapr-nav {
+	  height: 60px;
+	  background-color: #5B3586;
+	}
 
-#signup-button:hover,
-#signup-button:active {
-  color: #FFF;
-  background: #F2F2F2;
-  border-color: #F2F2F2;
-}
+	.navbar-default .navbar-nav > li > a {
+		color: #F2F2F2;
+	}
+
+	.navbar-default .navbar-nav > li > a:hover {
+		color: #F2F2F2;
+	}
+
+	.menu-items {
+	  list-style-type: none;
+		width: 50%;
+		display: inline-block;
+	}
+
+	.nav-item {
+	  color: #F2F2F2;
+	  font-size: 3em;
+		text-transform: uppercase;
+	}
+
+	.navbar-right {
+	  text-align: center;
+	  line-height: 55px;
+	}
+
+	#login-button  {
+	  display: inline;
+	  vertical-align: middle;
+	  margin-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	  width: 150%;
+	  border: 2px solid #F2F2F2;
+	  border-radius: 0;
+	  background-color: transparent;
+	  color: #F2F2F2;
+	  font-size: 3em;
+	  text-transform: uppercase;
+	  z-index: 5;
+	}
+
+	#signup-button  {
+	  display: inline;
+	  vertical-align: middle;
+	  margin-left: 5px;
+		margin-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	  border: 2px solid #F2F2F2;
+	  border-radius: 0;
+	  background-color: transparent;
+	  color: #F2F2F2;
+	  font-size: 3em;
+	  text-transform: uppercase;
+	  z-index: 5;
+	}
+
+	#login-button:hover,
+	#login-button:active {
+	  color: #FFF;
+	  background: #F2F2F2;
+	  border-color: #F2F2F2;
+	}
+
+	#signup-button:hover,
+	#signup-button:active {
+	  color: #FFF;
+	  background: #F2F2F2;
+	  border-color: #F2F2F2;
+	}
+
+	// MAIN PAGE
+
+	#mainwrap {
+		background-image: url("M_Vitali_25.jpg");
+	  position: relative;
+	  width: 100%;
+	  margin: 0;
+	  background-position: center center;
+	  min-height: 700px;
+	  background-size: cover;
+	}
+
+	#main-panel {
+		position: relative;
+		top: 160px;
+		left: 60px;
+		width: 300px;
+		background-color: none;
+		color: #5B3586;
+		z-index: 5;
+	}
+
+	footer {
+	  height: 40px;
+	  background-color: #5B3586;
+	  position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	// ABOUT PAGE
+
+	#aboutwrap {
+	  position: relative;
+	  width: 100%;
+	  margin-top: 0;
+	  background-position: center center;
+	  min-height: 700px;
+	  background-size: cover;
+		// background-color: #5B3586;
+	}
+
+		.about-cells {
+	  width: 33.33%;
+	  height: 350px;
+	  position: relative;
+	  display: inline-block;
+	  float:left;
+	  list-style: none;
+	}
+
+		#one {
+		background-image: url("artmapr-iphone.png");
+		background-size: cover;
+		overflow: hidden;
+		color: #DDFFD9;
+		// width: 100%;
+	}
+
+		#two {
+	  background-image: url("Mailchimp-Image-01.png");
+	  background-size: cover;
+	  overflow: hidden;
+	  color: #DDFFD9;
+	}
+
+	// API PLAYGROUND
+
+	#playgroundwrap {
+	  position: relative;
+	  width: 100%;
+	  margin-top: 0;
+	  background-position: center center;
+	  min-height: 700px;
+	  background-size: cover;
+		background-color: #F2F2F2;
+	}
+
+	// CONTACT PAGE
+
+	#contactwrap {
+	  position: relative;
+	  width: 100%;
+	  margin-top: 0;
+	  background-position: center center;
+	  min-height: 700px;
+	  background-size: cover;
+		background-color: #5B3586;
+	}
